@@ -14,7 +14,7 @@ O semáforo funciona com três LEDs (vermelho, amarelo e verde), alternando suas
 
 # Linguagem utilizada
 - C
-- 
+  
 # Funcionamento 
 
 Ao iniciar o programa pelo simulador ou pela sua placa, o led vermelho irá acender e esperar 3 segundos até desligar, então o led amarelo (ou azul caso utilize o kit de desenvolvimento BitDogLab) será aceso e após 3 segundos o led verde. Assim se mantém um ciclo como de um semáforo enquanto o sistema imprime uma mensagem a cada segundo pela porta serial, até o programa ser interrompido. 
