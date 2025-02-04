@@ -1,6 +1,6 @@
 # Atividade 01 - Temporizador Periódico 
 
-Este repositório apresenta um projeto feito como resolução da atividade 01 da U4 do EmbarcaTech da aula síncrona 29/01. O objetivo do projeto é simular o funcionamento de um semafóro utilizando um microcontrolador Raspberry Pi Pico W, aplicando conhecimentos sobre temporização e controle de LEDs RGB.
+Este repositório apresenta um projeto feito como resolução da Atividade 01 da U4 do EmbarcaTech da aula síncrona 29/01 sobre clock e temporização. O objetivo do projeto é simular o funcionamento de um semafóro utilizando um microcontrolador Raspberry Pi Pico W, aplicando conhecimentos sobre temporização e controle de LEDs RGB.
 
 O semáforo funciona com três LEDs (vermelho, amarelo e verde), alternando suas cores a cada 3 segundos, enquanto mensagens de status são exibidas.
 
