@@ -8,9 +8,11 @@
 #define LED_B_PIN 12 // Correspondente à cor amarela do semáforo
 #define LED_R_PIN 13 // Correspondente à cor vermelha do semáforo
 
-bool led_g_on = false; // Estado inicial do LED verde
-bool led_b_on = false; // Estado inicial do LED amarelo
-bool led_r_on = false; // Estado inicial do LED vermelho
+bool led_g_on = false; // Estado inicial do LED
+bool led_b_on = false; // Estado inicial do LED
+bool led_r_on = false; // Estado inicial do LED
+
+int semaforo_estado = 0; // Contador: 0 = Verde, 1 = Amarelo, 2 = Vermelho
 
 // Função para inicializar os pinos dos LEDs
 void inicializacaoleds() {
@@ -26,6 +28,34 @@ void inicializacaoleds() {
 
 // Função de callback que será chamada repetidamente pelo temporizador
 bool repeating_timer_callback(struct repeating_timer *t) {
+    printf("Altera o sinal.\n");
+
+    // Desliga todos os LEDs
+    gpio_put(LED_G_PIN, false);
+    gpio_put(LED_B_PIN, false);
+    gpio_put(LED_R_PIN, false);
+
+    // Altera o estado dos LEDs baseado na sequência
+    if (semaforo_estado == 0) {
+        // Verde acende
+        led_g_on = true;
+        led_b_on = false;
+        led_r_on = false;
+        semaforo_estado = 1; // Próximo estado será o amarelo
+    } else if (semaforo_estado == 1) {
+        // Amarelo acende
+        led_b_on = true;
+        led_g_on = false;
+        led_r_on = false;
+        semaforo_estado = 2; // Próximo estado será o vermelho
+    } else {
+        // Vermelho acende
+        led_r_on = true;
+        led_b_on = false;
+        led_g_on = false;
+        semaforo_estado = 0; // Próximo estado será o verde
+    }
+
     return true;
 }
 
@@ -40,10 +70,9 @@ int main() {
 
     // Rotiina principal
     while (true) {
-        // Contagem a cada segundo
+        // Contagem de 1 segundo para monitoramento
         sleep_ms(1000);
-        printf("Passou um segundo.\n");
+        printf("Passou 1 segundo.\n");
     }
-
     return 0;
 }
