@@ -6,9 +6,9 @@ O semáforo funciona com três LEDs (vermelho, amarelo e verde), alternando suas
 
 # Componentes e ferramentas utilizados 
 
-- Raspberry Pi pico W com Wokwi para simular os componentes
-- 3 Leds RGB
-- 3 resistores de 330 Ohms
+- Raspberry Pi pico W (com Wokwi para simular os componentes)
+- 3 Leds RGB (com Wokwi para simular os componentes)
+- 3 resistores de 330 Ohms (com Wokwi para simular os componentes)
 - Kit de desenvolvimento BitDogLab
 - VS Code
 
