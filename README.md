@@ -21,7 +21,7 @@ O semáforo funciona com três LEDs (vermelho, amarelo e verde), alternando suas
 O código alterna entre as cores vermelha, amarela e verde, simulando o ciclo de um semáforo real.
 - Temporização Precisa:
 O temporizador periódico altera o estado do semáforo a cada 3 segundos.
-Feedback Serial:
+- Feedback Serial:
   O programa exibe uma mensagem na porta serial a cada segundo, permitindo o monitoramento do funcionamento do sistema.
   
  *Lembrete:* O led amarelo será interpretado como azul caso utilize o kit de desenvolvimento BitDogLab.
