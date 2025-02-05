@@ -24,8 +24,6 @@ O temporizador periódico altera o estado do semáforo a cada 3 segundos.
 - Feedback Serial:
   O programa exibe uma mensagem na porta serial a cada segundo, permitindo o monitoramento do funcionamento do sistema.
   
- *Lembrete:* O led amarelo será interpretado como azul caso utilize o kit de desenvolvimento BitDogLab.
-
 # Como utilizar?
 
 - Você pode baixar este repositório no GitHub ou clonar o link na sua IDE(VsCode) utilizando o Git/Github Desktop. 
