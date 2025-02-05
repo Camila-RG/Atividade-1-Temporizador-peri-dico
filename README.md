@@ -17,7 +17,14 @@ O semáforo funciona com três LEDs (vermelho, amarelo e verde), alternando suas
   
 # Funcionamento 
 
-Ao iniciar o programa pelo simulador ou pela sua placa, o led vermelho irá acender e esperar 3 segundos até desligar, então o led amarelo (ou azul caso utilize o kit de desenvolvimento BitDogLab) será aceso e após 3 segundos o led verde. Assim se mantém um ciclo como de um semáforo enquanto o sistema imprime uma mensagem a cada segundo pela porta serial, até o programa ser interrompido. 
+- Controle de LEDs RGB:
+O código alterna entre as cores vermelha, amarela e verde, simulando o ciclo de um semáforo real.
+- Temporização Precisa:
+O temporizador periódico altera o estado do semáforo a cada 3 segundos.
+Feedback Serial:
+  O programa exibe uma mensagem na porta serial a cada segundo, permitindo o monitoramento do funcionamento do sistema.
+  
+ *Lembrete:* O led amarelo será interpretado como azul caso utilize o kit de desenvolvimento BitDogLab.
 
 # Como utilizar?
 
